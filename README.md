@@ -12,33 +12,29 @@ Current Year: Completed 1 year
 
 Over the past year, I have worked on improving my programming skills and solving problems across various topics.
 
-Academic and Programming Journey
-Subjects Studied in the First Year
+Academic and Programming Journey Subjects Studied in the First Year
 Programming Languages:
 
-Basic C Programming
-Basic C++ Programming
-Data Structures and Algorithms:
+Basic C Programming Basic C++ Programming Data Structures and Algorithms:
 
-Basic Data Structures (e.g., arrays, stacks, queues, linked lists)
-Graph Theory (basics and applications)
-Tree Structures (including Segment Trees)
-Mathematics and Theoretical Concepts:
-
-Number Theory
-Basic Math
-
+*** Basic Data Structures (e.g., arrays, stacks, queues, linked lists)
+*** Graph Theory (basics and applications)
+*** Tree Structures (including Segment Trees)
+*** Mathematics and Theoretical Concepts: (  Number Theory , Basic Math)
+                                
 Problem-Solving Highlights
 Solved over 700+ problems on various online judges within the first year.
 
 Topics covered include:
-Sorting and Searching
-Dynamic Programming
-Graph Traversals
-Mathematical and Logical Problems
+
+* Sorting and Searching
+*  Dynamic Programming
+* Graph Traversals
+* Mathematical and Logical Problems
 
 Repository Purpose
-This repository serves as a public archive of all the problems I have solved during this time. It is structured to organize solutions by  weeks, making it easier to navigate and review the work.
+This repository serves as a public archive of all the problems I have solved during this time. 
+It is structured to organize solutions by  weeks, making it easier to navigate and review the work.
 
 Repository Structure
 
@@ -48,19 +44,19 @@ problem-solve/
 
 │   ├── Topic Ways/
 
-│   │   ├── problem1.cpp
+ │   │   ├── problem1.cpp
 
-│   │   ├── problem2.cpp
+ │   │   ├── problem2.cpp
 
-│   │   ├── README.md
+ │   │   ├── README.md
 
 │   ├── practice/
 
-│   │   ├── problem1.cpp
+ │   │   ├── problem1.cpp
 
-│   │   ├── problem2.cpp
+ │   │   ├── problem2.cpp
 
-│   │   ├── README.md
+ │   │   ├── README.md
 
 │   ├── README.md
 problem-solve/
@@ -69,19 +65,19 @@ problem-solve/
 
 │   ├── Topic Ways/
 
-│   │   ├── problem1.cpp
+ │   │   ├── problem1.cpp
 
-│   │   ├── problem2.cpp
+ │   │   ├── problem2.cpp
 
-│   │   ├── README.md
+ │   │   ├── README.md
 
 │   ├── practice/
 
-│   │   ├── problem1.cpp
+ │   │   ├── problem1.cpp
 
-│   │   ├── problem2.cpp
+ │   │   ├── problem2.cpp
 
-│   │   ├── README.md
+ │   │   ├── README.md
 
 │   ├── README.md
 Future Goals
