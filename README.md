@@ -6,23 +6,32 @@ This repository contains solutions to problems I have solved over the past year 
 About Me 
 
 Name: Najmul Huda
+
 University: Sheikh Hasina University, Netrokona (proposed: Netrokona University)
+
 Enrollment Date: November 1, 2023
+
 Current Year: Completed 1 year
 
 Over the past year, I have worked on improving my programming skills and solving problems across various topics.
 
 Academic and Programming Journey Subjects Studied in the First Year
+
 Programming Languages:
 
 Basic C Programming Basic C++ Programming Data Structures and Algorithms:
 
+
 *** Basic Data Structures (e.g., arrays, stacks, queues, linked lists)
+
 *** Graph Theory (basics and applications)
+
 *** Tree Structures (including Segment Trees)
+
 *** Mathematics and Theoretical Concepts: (  Number Theory , Basic Math)
                                 
 Problem-Solving Highlights
+
 Solved over 700+ problems on various online judges within the first year.
 
 Topics covered include:
@@ -33,6 +42,7 @@ Topics covered include:
 * Mathematical and Logical Problems
 
 Repository Purpose
+
 This repository serves as a public archive of all the problems I have solved during this time. 
 It is structured to organize solutions by  weeks, making it easier to navigate and review the work.
 
