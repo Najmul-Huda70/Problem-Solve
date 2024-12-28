@@ -43,27 +43,47 @@ This repository serves as a public archive of all the problems I have solved dur
 Repository Structure
 
 problem-solve/
-├── Week-01/
-│   ├── Topic Ways/
-│   │   ├── problem1.cpp
-│   │   ├── problem2.cpp
-│   │   ├── README.md
-│   ├── practice/
-│   │   ├── problem1.cpp
-│   │   ├── problem2.cpp
-│   │   ├── README.md
-│   ├── README.md
-├── Week-02/
-│   ├── Topic Ways/
-│   │   ├── problem1.cpp
-│   │   ├── problem2.cpp
-│   │   ├── README.md
-│   ├── practice/
-│   │   ├── problem1.cpp
-│   │   ├── problem2.cpp
-│   │   ├── README.md
-│   ├── README.md
 
+├── Week-01/
+
+│   ├── Topic Ways/
+
+│   │   ├── problem1.cpp
+
+│   │   ├── problem2.cpp
+
+│   │   ├── README.md
+
+│   ├── practice/
+
+│   │   ├── problem1.cpp
+
+│   │   ├── problem2.cpp
+
+│   │   ├── README.md
+
+│   ├── README.md
+problem-solve/
+
+├── Week-02/
+
+│   ├── Topic Ways/
+
+│   │   ├── problem1.cpp
+
+│   │   ├── problem2.cpp
+
+│   │   ├── README.md
+
+│   ├── practice/
+
+│   │   ├── problem1.cpp
+
+│   │   ├── problem2.cpp
+
+│   │   ├── README.md
+
+│   ├── README.md
 Future Goals
 1. Continue improving problem-solving skills and mastering advanced topics in data structures and algorithms.
 2. Solve more challenging problems in competitive programming.
