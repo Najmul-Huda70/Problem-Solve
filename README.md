@@ -50,7 +50,7 @@ Repository Structure
 
 problem-solve/
 
-├── Week-01/
+├── Day-01/
 
 │   ├── Topic Ways/
 
@@ -71,7 +71,7 @@ problem-solve/
 │   ├── README.md
 problem-solve/
 
-├── Week-02/
+├── Day-02/
 
 │   ├── Topic Ways/
 
