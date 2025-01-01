@@ -17,21 +17,19 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+    int n;
+    cin>>n;
+    vi v(n);
+    for(int i=0;i<n;i++)
+    {
+       cin>>v[i];
+     }
+     v.push_back(v[0]);
+     for(int i=1;i<=n;i++)
+     {  
+        cout<<v[i]<<" ";
+      }
+ cout<<endl;
  }
 return 0;
 }

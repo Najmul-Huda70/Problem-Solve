@@ -17,21 +17,28 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   int n,k;
+   cin>>n>>k;
+   map<int,int>mp;
+   while(k--)
    {
-        cout<<"YES"<<endl;
-        
+      int x,y;
+      cin>>x>>y;
+      mp[x] +=y;
    }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
+
+   ll ans=0;
+   vl v;
+  for(auto val:mp)
+  {  
+    v.push_back(val.second);
+  }
+  sort(v.rbegin(),v.rend());
+  for(int i=0;i<min(n, (int)mp.size());i++)
+  {
+    ans+=v[i];
    }
-   else cout<<"NO"<<endl;
-   
+   cout<<ans<<endl;  
  }
 return 0;
 }

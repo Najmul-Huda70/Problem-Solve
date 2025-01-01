@@ -14,24 +14,23 @@ int32_t main()
 {
 ios_base::sync_with_stdio(0);
 cin.tie(0);cout.tie(0);
- int t;cin>>t;
- while(t--)
+ int n;
+ cin>>n;
+ vi v(n);
+ for(int i=0;i<n;i++)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
+   cin>>v[i];
+  }
+  sort(v.begin(),v.end());
+  bool flag = false;
+  for(int i=0;i<n-2;i++)
+  {
+     if(v[i]+v[i+1] > v[i+2]) 
+     {
+        flag = true; 
+        break;
+     }
    }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
- }
+   cout<<(flag  ? "YES":"NO")<<endl;
 return 0;
 }

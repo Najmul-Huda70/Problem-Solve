@@ -1,4 +1,4 @@
-//s.i.snajmulhuda2002
+//
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -14,24 +14,16 @@ int32_t main()
 {
 ios_base::sync_with_stdio(0);
 cin.tie(0);cout.tie(0);
- int t;cin>>t;
- while(t--)
- {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
- }
+  int a,b;
+  cin>>a>>b;
+  int k = a/2;
+  if(b%2==1)
+  {
+     cout<<(b/2) + 1<<endl;
+  }
+  else 
+  {
+      cout<<((a-b)/2) + 1<<endl;
+  }
 return 0;
 }

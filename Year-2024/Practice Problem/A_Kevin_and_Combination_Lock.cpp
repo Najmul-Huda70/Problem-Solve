@@ -19,19 +19,20 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
    
+   while(n>0)
+   {   
+    string s = to_string(n);
+     size_t pos = s.find("33");
+     if(pos !=string::npos) 
+     {
+        s.erase(pos,2);
+        n = (s.empty() ? 0:stoi(s));
+     }
+     else if(n>=33) n-=33;
+     else break;
+   }
+ cout<<(n==0 ? "YES":"NO")<<endl;
  }
 return 0;
 }

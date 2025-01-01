@@ -17,21 +17,10 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+    int n;
+  cin>>n;
+ cout<<(n%2==0 ? (n/2):(n-1)/2)<<endl;
+ 
  }
 return 0;
 }

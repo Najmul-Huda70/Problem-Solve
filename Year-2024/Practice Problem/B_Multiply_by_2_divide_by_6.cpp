@@ -1,4 +1,4 @@
-//s.i.snajmulhuda2002
+//Najmul Huda
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -19,19 +19,30 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   int k= n;
+   int cnt=0;
+   while(true)
    {
-        cout<<"YES"<<endl;
-        
+       
+       while(n%6==0)
+       {
+         n/=6;
+         cnt++;
+       }
+       if(n%6!=0 && (n*2)%3==0)
+       {
+        cnt++;
+           n*=2;
+       }
+       else 
+       {
+         if(n!=1) cnt=0;
+         break;
+       }
+       
    }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+   if(k==1) cout<<0<<endl;
+ else cout<<(cnt==0 ? -1:cnt)<<endl;
  }
 return 0;
 }

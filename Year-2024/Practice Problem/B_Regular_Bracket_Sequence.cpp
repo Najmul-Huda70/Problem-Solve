@@ -12,9 +12,8 @@ const int N = 1e6 + 9;
 const ll mod = 1e5 + 7, inf = 1e9;
 bool isRegular(ll cnt1,ll cnt2,ll cnt3 ,ll cnt4)
 {
-        if(cnt1==cnt4 && cnt3%2==0)  return true;
-       else if(cnt1==0 && cnt3==0 && cnt4==0) return true;
-       else return false; 
+        if(cnt1==cnt4 && (cnt1>0 || cnt3==0))  return true;
+        else return false; 
 }
 
 int32_t main()

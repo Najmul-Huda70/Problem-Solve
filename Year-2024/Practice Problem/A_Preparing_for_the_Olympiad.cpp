@@ -19,19 +19,22 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   vi a(n),b(n+1);
+   for(int i=0;i<n;i++)
    {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+       cin>>a[i];
+    }
+    for(int i=0;i<n;i++)
+    {
+      cin>>b[i];
+     }
+  b[n]=0;
+  ll ans = 0;
+for(int i=0;i<n;i++)
+{
+   if(a[i]>b[i+1]) ans+=a[i]-b[i+1];
+ }
+ cout<<ans<<endl;
  }
 return 0;
 }

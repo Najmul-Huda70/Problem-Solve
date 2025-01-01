@@ -19,19 +19,20 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   vi v(n+1);
+   for(int i=1;i<=n;i++)
    {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+    cin>>v[i];
+    }
+    int cnt = 0;
+    for(int i=1;i<=n;i++)
+    {
+      for(int j =v[i]-i;j<=n;j+=v[i])
+      {
+         if(j>i && 1LL*v[i]*v[j] == i + j) cnt++;
+      }
+     }
+ cout<<cnt<<endl;
  }
 return 0;
 }

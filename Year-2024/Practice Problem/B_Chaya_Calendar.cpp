@@ -19,19 +19,24 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
+  vl v(n);
+  for(int i=0;i<n;i++)
+  {
+     cin>>v[i];
    }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+ ll ans =v[0];
+ for(int i=1;i<n;i++)
+ {  if(v[i]>ans) ans=v[i];
+ else ans = (ans/v[i] + 1 )*v[i];  
+  }
+  cout<<ans<<endl;
  }
 return 0;
 }
+/*
+   3 2 4 5 9 18
+1st index value 3           so , 3th
+2nd index value 2         already has gone 3th 
+ans = (ans/v[i] + 1 )*v[i];   2 * 2 = 4 so the year 4th 
+
+*/

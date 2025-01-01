@@ -17,21 +17,32 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   int n,a,b,c;
+   cin>>n>>a>>b>>c;
+   ll cnt=0,sum=0;
+   ll s = a+b+c;
+   int temp = n/s;
+   cnt = temp*3;
+   sum = temp*s;
+   while(sum<n)
    {
-        cout<<"YES"<<endl;
-        
+     if(cnt%3==0) 
+     {
+        sum+=a;
+        cnt++;
+     }
+     else if(cnt%3==1)
+     {
+        sum+=b;
+        cnt++;
+     }
+     else if(cnt%3==2)
+     {
+        sum+=c;
+        cnt++;
+     }
    }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+ cout<<cnt<<endl;
  }
 return 0;
 }

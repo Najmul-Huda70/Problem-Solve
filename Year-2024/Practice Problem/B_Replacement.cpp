@@ -19,19 +19,26 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+   string s,r;
+   cin>>s>>r;
+   /*
+   First, you choose,
+ an index k such that 1≤k≤|s|−1  and sk≠sk+1 .
+If it is impossible to choose such an index, you lose;
+   */
+ string  temp="";
+ int i = 0;
+ for(int k=0;k<n-1;k++)
+ {
+    //op valid
+      if(s[k]!=s[k+1])
+      {
+         temp+=s.substr()
+      }
+  }
+  cout<<(s.size()==1 ? "YES":"NO")<<endl;
+
+
  }
 return 0;
 }

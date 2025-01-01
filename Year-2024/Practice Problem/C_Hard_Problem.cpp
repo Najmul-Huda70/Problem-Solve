@@ -17,21 +17,27 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+   int m,a,b,c;
+   cin>>m>>a>>b>>c;
+   ll total_seat = 2*m;
+   ll ans = 0;
+   if(a<=m) {
+    total_seat-=a;
+    ans+=a;
+    }
+    else if(a>m) 
+    {
+    total_seat-=m;
+    ans+=m;
+    }
+   if(b<=m){ total_seat-=b;ans+=b;}
+   else if(b>m){
+    total_seat-=m;
+    ans+=m;
+    }
+   if(total_seat<=c) ans+=total_seat;
+   else if(total_seat>c) ans+=c;
+   cout<<ans<<endl;
  }
 return 0;
 }

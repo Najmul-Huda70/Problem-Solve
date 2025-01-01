@@ -17,21 +17,13 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
    
+   int a,b;
+   cin>>a>>b;
+   ll g = __gcd(a,b);
+  // cout<<g<<endl;
+   ll lcm = (a*b)/g;
+   cout<<lcm<<endl;
  }
 return 0;
 }

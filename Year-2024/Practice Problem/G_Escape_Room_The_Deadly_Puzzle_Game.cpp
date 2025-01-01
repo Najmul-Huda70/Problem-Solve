@@ -1,4 +1,4 @@
-//s.i.snajmulhuda2002
+//Najmul_Huda
 #include<bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -17,21 +17,27 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   int n,m,mi;
+   cin>>n>>m>>mi;
+   vi arr(n);
+   for(int i=0;i<n;i++)
    {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
+     cin>>arr[i];
+    }
+ sort(arr.begin(),arr.end());
+ int sum = 0,cnt = 0;
+ //bool flag = false;
+ for(int i=0;i<n;i++)
+ {
+    
+   if(sum+arr[i]<=m)
    {
-     cout<<"YES"<<endl;
+    sum+=arr[i];
+     cnt++;
    }
-   else cout<<"NO"<<endl;
-   
+   else break;
+  }
+cout<<(cnt>=mi ?  "ESCAPE THE ROOM!":"OPPS!")<<endl;
  }
 return 0;
 }

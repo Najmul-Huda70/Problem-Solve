@@ -17,21 +17,20 @@ cin.tie(0);cout.tie(0);
  int t;cin>>t;
  while(t--)
  {
-   int n;
-   cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
-   {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+    int n;
+    cin>>n;
+    vi v(n+1);
+    for(int i=1;i<=n;i++)
+    {
+        cin>>v[i];
+     }
+      int ans=0;
+      for(int i=1;i<=n;i++)
+      {
+          ans = __gcd(ans,abs(v[i]-i));
+       }
+      cout<<ans<<endl;
+ 
  }
 return 0;
 }

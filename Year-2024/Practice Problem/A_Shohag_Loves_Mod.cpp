@@ -19,19 +19,13 @@ cin.tie(0);cout.tie(0);
  {
    int n;
    cin>>n;
-   string s;
-   cin>>s;
-   if(s[0]=='1' or s[n-1]=='1')
+   int j= 1;
+   for(int i=1;i<=n;i++)
    {
-        cout<<"YES"<<endl;
-        
-   }
-   else if(s.find("11") != string::npos)
-   {
-     cout<<"YES"<<endl;
-   }
-   else cout<<"NO"<<endl;
-   
+     cout<<j<<" ";
+     j+=2;
+    }
+ cout<<endl;
  }
 return 0;
 }
