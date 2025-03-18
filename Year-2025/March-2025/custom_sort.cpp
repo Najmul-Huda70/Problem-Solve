@@ -28,7 +28,7 @@ cin.tie(0);cout.tie(0);
      sort(arr.begin(),arr.end(),[](int a,int b)
     {
         if(a%2==b%2) return a<b;//Normal ascending order
-        return a%2==1;//even first
+        return a%2==0;//even first
     }); 
     for(int i=0;i<n;i++)
     {
