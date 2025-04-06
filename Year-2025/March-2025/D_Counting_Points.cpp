@@ -25,34 +25,68 @@ int32_t main()
     cin >> t;
     while (t--)
     {
+        /*
+        2 3
+       0 0
+       1 2
+
+       */
         int n, m;
-        cin >> n >> m;
+        cin >> n >> m; // 2 3
         ll ans = m * 1LL;
         ll sumx = 0LL;
-        vi x(n);
+        vi x(n); // 0 0
         FOR(i, 0, n - 1)
         {
             cin >> x[i];
             sumx += x[i];
         }
-        vi r(n);
+        vi r(n); // 1 2
         FOR(i, 0, n - 1)
         {
             cin >> r[i];
         }
 
+        vector<pair<int, double>> mp;
         for (int i = 0; i < n; i++)
         {
-            int X = x[i] + 1;
-            int Y = 1;
-            while (X * X + Y * Y <= r[i] * r[i])
+            int lowX = x[i] - r[i];
+            int HighX = x[i] + r[i];
+            for (int X = lowX; X <= HighX; X++)
             {
-                sumx++;
-                X++;
-                Y++;
+                double d = r[i] * r[i] - (X - x[i]) * (X - x[i]);
+                if (d >= 0)
+                {
+                    double Y = sqrt(d);
+                    if (Y == 0)
+                    {
+                        mp.push_back({X, Y});
+                        // mp[X] = Y;
+                        // cout << X << " " << Y << endl;
+                    }
+
+                    else
+                    {
+                        mp.push_back({X, Y});
+                        mp.push_back({X, -Y});
+                        // mp[X] = -Y;
+                        // mp[X] = Y;
+
+                        // cout << X << " " << Y << endl;
+                        // cout << X << " " << -Y << endl;
+                    }
+                }
             }
         }
-        cout << sumx << endl;
+        // cout << mp.size() << endl;
+
+        // for (auto [X, Y] : mp)
+        // {
+        //     cout << X << " " << Y << endl;
+        // }
+        cout << "\n"
+             << mp.size() + 1 << endl;
+        // cout << "\n\n";
     }
     return 0;
 }
