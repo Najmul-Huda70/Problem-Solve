@@ -7,7 +7,7 @@ About Me
 
 Name: Najmul Huda
 
-University: Sheikh Hasina University, Netrokona (proposed: Netrokona University)
+University:  Netrokona University
 
 Enrollment Date: November 1, 2023
 
