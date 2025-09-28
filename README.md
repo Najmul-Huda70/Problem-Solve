@@ -1,9 +1,9 @@
-Problem-Solve Repository 
+## Problem-Solve Repository 
 
 Welcome to the Problem-Solve repository!
-This repository contains solutions to problems I have solved over the past year while studying BSc Hon's in CSE at Sheikh Hasina University, Netrokona (proposed name: Netrokona University).
+This repository contains solutions to problems I have solved over the past year while studying BSc Hon's in CSE at Netrokona University, Netrokona.
 
-About Me 
+# About Me 
 
 Name: Najmul Huda
 
