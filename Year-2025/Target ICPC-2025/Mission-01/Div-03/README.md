@@ -1,2 +1,2 @@
-# [Div-03](https://codeforces.com/contest/1904) 
+# Div-03
 ## Solution
