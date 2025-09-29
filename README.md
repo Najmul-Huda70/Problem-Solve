@@ -54,23 +54,20 @@ Thank you for visiting! Feel free to explore the repository and provide feedback
 
 # [Crome Extension for CP](https://youtu.be/t-d9CwPV--A?si=ploK1Tzm2zUcWUy-) 
 
-👉[CF Analytics](https://chromewebstore.google.com/det...) 
+[CF Analytics](https://chromewebstore.google.com/detail/cf-analytics/hhljbjodjdbjbggddjaidojnlmaobcpo)
 
-👉 [CF GetRating ](https://chromewebstore.google.com/det...)
+[CF GetRating ](https://chromewebstore.google.com/detail/cf-getrating/amnjdhcbnpchmbggnfachokcjiidcpkc) 
 
-👉 [CF World Standings ](https://chromewebstore.google.com/det...
-)
+[CF World Standings ](https://chromewebstore.google.com/detail/cf-world-standings/caginmipmmelcmijagfppgdljepiioak) 
 
-👉 [CF Predictor](https://chromewebstore.google.com/det...)
+[CF Predictor](https://chromewebstore.google.com/detail/cf-predictor/ocfloejijfhhkkdmheodbaanephbnfhn) 
 
-👉 [Carrot](https://chromewebstore.google.com/det...)
+[Carrot](https://chromewebstore.google.com/detail/carrot/gakohpplicjdhhfllilcjpfildodfnnn) 
 
-👉 [Codeforces Enhancer](https://chromewebstore.google.com/det...
-) 
+[Codeforces Enhancer](https://chromewebstore.google.com/detail/codeforces-enhancer/ocmandagmgmkcplckgnfgaokpgkfenmp) 
 
-👉 [Codeforces Practice Tracker](https://chromewebstore.google.com/det...)
+[Codeforces Practice Tracker](https://chromewebstore.google.com/detail/codeforces-practice-track/cnahgdhboflcnojgmeehhhfeoojifonm) 
 
-👉 [CP Calendar](https://chromewebstore.google.com/det...)
-
+[CP Calendar](https://chromewebstore.google.com/detail/cp-calendar/nahdeimiheknmpknkenfkmhonnlboeim) 
 
 
