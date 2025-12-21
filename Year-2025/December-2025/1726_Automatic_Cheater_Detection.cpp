@@ -1,0 +1,69 @@
+// Najmul Huda
+#include <bits/stdc++.h>
+using namespace std;
+#define all(x) x.begin(), x.end()
+#define SET(arr, a) memset(arr, a, sizeof(arr))
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
+#define condition(flag) cout << (flag ? "YES" : "NO") << endl;
+using ll = long long;
+using vb = vector<bool>;
+using vi = vector<int>;
+using vl = vector<ll>;
+using vc = vector<char>;
+using vs = vector<string>;
+const int N = 1e6 + 9;
+const ll mod = 1e5 + 7, inf = 1e9;
+template <typename Najmul>
+void print(const vector<Najmul> &ans)
+{
+    for (const auto val : ans)
+        cout << val << " ";
+    cout << endl;
+}
+
+void solve()
+{
+    int n;
+    cin >> n;
+    map<int, int> d1, d2;
+    for (int i = 1; i <= n; i++)
+    {
+        int d, s;
+        char r;
+        cin >> d >> s >> r;
+        if (s == 1 and r == 'c')
+            d1[d]++;
+        if (s == 0 and r == 'i')
+            d2[d]++;
+    }
+    ll ans = 0;
+    for (auto [D, cnt1] : d1)
+    {
+        int cnt = 0;
+        for (auto [d, cnt2] : d2)
+        {
+            if (D > d)
+            {
+                cnt += cnt2;
+            }
+        }
+        ans += (cnt1 * 1LL * cnt);
+    }
+
+    cout << ans << endl;
+}
+
+int32_t main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
