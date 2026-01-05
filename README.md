@@ -3,7 +3,7 @@ A collection of problem solutions solved by me over time.
 
  - [2024](https://github.com/Najmul-Huda70/Problem-Solve/tree/main/Year-2024)
  - [2025](https://github.com/Najmul-Huda70/Problem-Solve/tree/main/Year-2025)
- - 2026
+ - [2026](https://github.com/Najmul-Huda70/Problem-solving-Year-2026)
 
 Thank you for visiting! Feel free to explore the repository and provide feedback.
 
