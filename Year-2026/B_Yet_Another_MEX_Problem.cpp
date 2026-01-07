@@ -36,15 +36,9 @@ void solve()
         cin >> x;
         cnt[x]++;
     }
-    // cout << "count array: " << endl;
-    // for (int i = 0; i <= n; i++)
-    // {
-    //     cout << i << " -> " << cnt[i] << endl;
-    // }
     int final_arr_size = k - 1;
     int op_need = n - final_arr_size;
 
-    // cout << "need: " << op_need << endl;
     int possible = 0;
     for (int i = 0; i <= n; i++)
     {
@@ -54,7 +48,6 @@ void solve()
             cnt[i] = 1;
         }
     }
-    // cout << "Possible: " << possible << endl;
     if (op_need <= possible)
     {
         cout << MEX() << endl;
@@ -62,7 +55,6 @@ void solve()
     }
 
     op_need = op_need - possible;
-    // cout << "op need: " << op_need << endl;
     for (int i = n; i >= 0 and op_need > 0; i--)
     {
         if (cnt[i] == 1)
@@ -71,13 +63,7 @@ void solve()
             op_need--;
         }
     }
-    // cout << "last need: " << op_need << endl;
 
-    // cout << "last count array: " << endl;
-    // for (int i = 0; i <= n; i++)
-    // {
-    //     cout << i << " -> " << cnt[i] << endl;
-    // }
     cout << MEX() << endl;
 }
 
