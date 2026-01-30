@@ -1,0 +1,67 @@
+// Najmul Huda
+#include <bits/stdc++.h>
+using namespace std;
+#define all(x) x.begin(), x.end()
+#define SET(arr, a) memset(arr, a, sizeof(arr))
+#define yes cout << "YES" << endl;
+#define no cout << "NO" << endl;
+#define condition(flag) cout << (flag ? "YES" : "NO") << endl;
+using ll = long long;
+const int N = 1e6 + 9;
+const ll mod = 1e5 + 7, inf = 1e9;
+void brute_force();
+void solve()
+{
+    int n, m, h;
+    cin >> n >> m >> h;
+    int arr[n + 1];
+    for (int i = 1; i <= n; i++)
+    {
+        cin >> arr[i];
+    }
+    vector<pair<int, int>> v(m + 1);
+    int previous = 0;
+    //T.C = O(m+n)
+    for (int i = 1; i <= m; i++)//O(m)
+    {
+        int b, c;
+        cin >> b >> c;
+        v[i] = {b, c};
+        arr[b] += c;
+        if (arr[b] > h)
+        {
+            for (int j = i; j > previous; j--) //O(n)
+            {
+                arr[v[j].first] -= v[j].second;
+            }
+            previous = i;
+        }
+    }
+    for (int i = 1; i <= n; i++)
+    {
+        cout << arr[i] << ' ';
+    }
+    cout << endl;
+}
+int32_t main()
+{
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
+    }
+    return 0;
+}
+
+/*-----------------------------------Brute Force Approach--------------------------------*/
+void brute_force() // time complexity O(...)
+{
+}
+/*---------------------------------------Ovservation-------------------------------------*/
+/*
+
+*/

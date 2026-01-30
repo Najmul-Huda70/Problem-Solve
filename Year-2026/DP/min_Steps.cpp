@@ -10,21 +10,25 @@ using ll = long long;
 const int N = 1e5 + 9;
 const ll mod = 1e5 + 7, inf = 1e9;
 void brute_force();
-
+int step[N];
+int min_Steps(int i)
+{
+    if (i == 1)
+        return 0;
+    if (step[i] != -1)
+        return step[i];
+    int ans = min_Steps(i - 1) + 1;
+    if (i % 2 == 0)
+        ans = min(ans, min_Steps(i / 2) + 1);
+    if (i % 3 == 0)
+        ans = min(ans, min_Steps(i / 3) + 1);
+    return step[i] = ans;
+}
 void solve()
 {
-    int n, m, k;
-    cin >> n >> m >> k;
-    int mxBase = max(k - 1, n - k);
-    int mnBase = min(k - 1, n - k);
-    int ans = 1;
-    for (int i = 1; i <= mxBase; i++)
-    {
-        int mx_days = 2 * i - 1;
-        int curr_ans = i + 1 + min({m - mx_days, mnBase, i});
-        ans = max(curr_ans, ans);
-    }
-    cout << ans << endl;
+    int n;
+    cin >> n;
+    cout << min_Steps(n) << endl;
 }
 int32_t main()
 {
@@ -33,6 +37,7 @@ int32_t main()
     cout.tie(0);
     int t;
     cin >> t;
+    memset(step, -1, sizeof step);
     while (t--)
     {
         solve();
